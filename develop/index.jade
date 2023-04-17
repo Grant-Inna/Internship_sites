@@ -1,0 +1,51 @@
+doctype
+html
+
+   include assets/jade/static/header
+
+   body
+      main.projects.body-wrapper.project-is
+         .wrapper
+            .project__link_container
+               .project__link
+                  span Все проекты
+                  i.icon-arrow
+            header.project__header_container
+               h1.publications-detailed__title.publications-detailed__title-is Стажировочные
+                  br
+                  | площадки
+            .project__info_container
+               .project__info
+                  h2.project-detailed__title__text.project-detailed__title__text-is.mb-3  Информация о&nbsp;проекте
+                  p Цель стажировочной площадки&nbsp;&mdash; сопровождение и&nbsp;поддержка управленцев в&nbsp;сфере образования, распространение в&nbsp;субъектах Российской Федерации лучших управленческих практик.
+
+            .project__tasks_container
+               h2.project-detailed__title__text.project-detailed__title__text-is.mb-3 Основные задачи
+               .project__item
+                  i.icon-task.icon-task-1
+                  p методическое и&nbsp;консультационное сопровождение управленцев в&nbsp;сфере образования (государственные и&nbsp;муниципальные служащие органов управления образованием)
+               .project__item
+                  i.icon-task.icon-task-2
+                  p тиражирование позитивного опыта и&nbsp;лучших управленческих практик, нацеленных на&nbsp;решение конкретных управленческих задач
+               .project__item
+                  i.icon-task.icon-task-3
+                  p обобщение и&nbsp;распространение опыта стажировочной площадки с&nbsp;целью формирования и&nbsp;развития региональных и&nbsp;муниципальных систем управления образованием
+
+            .project__calendar_container
+               h2.project-detailed__title__text.project-detailed__title__text-is.mb-3 Календарь мероприятий
+               .relation
+               .project__calendar_holder
+                  iframe(src='https://calendar.yandex.ru/embed/week?&layer_ids=23034565&tz… мероприятий' width='100%' height='100%' frameborder='0' style='border: 1px solid #eee')
+
+            .project__map_container
+               h2.project-detailed__title__text.project-detailed__title__text-is.mb-3 Интерактивная карта стажировочных площадок
+               .project__map_holder
+                  .map
+                     .project__map_img
+                     #Irkutsk_Oblast.region 8
+                     #Tver_Oblast.region 7
+
+
+
+      script( src='./assets/js/jquery.js' )
+      script( src='./assets/js/work.js' )

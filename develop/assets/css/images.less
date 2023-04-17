@@ -1,0 +1,77 @@
+.icon-arrow() {
+   background-image: url("../data/icon-arrow.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.icon-arrow-hover() {
+   background-image: url("../data/icon-arrow-hover.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.header() {
+   background-image: url("../data/header-bg.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.build() {
+   background-image: url("../data/build.svg");
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: contain;
+}
+.info() {
+   background-image: url("../data/info-bg.svg");
+   background-repeat: no-repeat;
+   background-position: left bottom;
+   background-size: contain;
+}
+
+.task-1() {
+   background-image: url("../data/icon-tasks-2.svg");
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-size: contain;
+}
+.task-2() {
+   background-image: url("../data/icon-tasks-1.svg");
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-size: contain;
+}
+.task-3() {
+   background-image: url("../data/icon-tasks-3.svg");
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-size: contain;
+}
+
+.calendar() {
+   background-image: url("../data/calendar-bg.svg");
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-size: contain;
+}
+
+.map() {
+   background-image: url("../data/map.svg");
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: contain;
+}
+
+
+.region( @name ) {
+   background-image: url("../data/regions/@{name}.svg");
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: contain;
+}
+.Irkutsk_Oblast() {
+   .region('Irkutsk_Oblast');
+}
+.Tver_Oblast() {
+   .region('Tver_Oblast');
+}
