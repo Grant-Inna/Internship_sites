@@ -223,9 +223,11 @@ header.project__header_container:before {
    
    cursor: pointer;
    opacity: 1;
+   .tr();
 }
 .region_hide {
    opacity: 0;
+   .tr();
 }
 .project__map_img {
    position: absolute;
@@ -236,6 +238,8 @@ header.project__header_container:before {
    left: 0;
    bottom: 0;
    right: 0;
+   
+   .tr();
 }
 .Irkutsk_Oblast {
    .Irkutsk_Oblast();
@@ -262,6 +266,27 @@ header.project__header_container:before {
    left: calc(145px - var(--Tver_Oblast-left));
 }
 
+.project__region_holder h3 {
+    font-size: 20px;
+    line-height: 25px;
+}
+.project__region_holder {
+   position: absolute;
+   z-index: 800;
+   padding: 25px 32px;
+   background-color: #DBE8FF;
+   color: #333333;
+   
+   display: none;
+}
+.project__region_holder.region_Irkutsk_Oblast {
+   top: calc(540px - var(--Irkutsk_Oblast-top));
+   left: calc(720px - var(--Irkutsk_Oblast-left));
+}
+.project__region_holder.region_Tver_Oblast {
+   top: calc(360px - var(--Tver_Oblast-top));
+   left: calc(145px - var(--Tver_Oblast-left));
+}
 
 @media screen and (max-width: 1250px) {
    :root {

@@ -16,17 +16,16 @@ $(document).ready(function () {
          $img.removeProp('class').addClass('project__map_img');
          $img.addClass(id);
          $('.region').addClass(hide);
+
+         let info = $('.project__region_holder.region_' + id );
+         info.fadeIn();
          
          $img.on( 'click', function(e) {
             console.log(e.target);
             $('.region_hide').removeClass(hide);
             $(this).removeClass(id);
-            // console.log($(this).removeProp('class'));
-         })
-         
-         
-         
-         // console.log('Относительные координаты: По оси X:' + e.offsetX+', По оси Y:' + e.offsetY);
+            $('.project__region_holder').fadeOut();
+         });
       });
     
 
