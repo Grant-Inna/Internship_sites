@@ -107,7 +107,10 @@ header.project__header_container:before {
    margin-left: auto;
 }
 
-.project__tasks_container {
+.project__tasks_container p {
+   margin-bottom: 0;
+}
+.project__tasks_holder {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
@@ -139,6 +142,10 @@ header.project__header_container:before {
 
 .icon-task-3 {
    .task-3()
+}
+
+.icon-task-4 {
+   .task-4()
 }
 
 .project__item p {
@@ -340,9 +347,9 @@ header.project__header_container:before {
       width: 60%
    }
    
-   .project__tasks_container {
+   .project__tasks_holder {
       grid-template-columns: 1fr;
-      grid-template-rows: 70px 1fr 1fr;
+      grid-template-rows: repeat( 4 / 1fr );
    }
    
    .icon-task {
@@ -354,6 +361,9 @@ header.project__header_container:before {
    
    .icon-task-2 {
       height: 65px;
+   }
+   .icon-task-4 {
+      height: 70px;
    }
    
    .project__calendar_holder {
