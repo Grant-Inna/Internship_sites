@@ -464,17 +464,16 @@ header.project__header_container:before {
       line-height: 8.3vw;
    }
    
-   header.project__header_container:before {
-      content: '';
-   }
-   
    .project-detailed__title__text.project-detailed__title__text-is {
       font-size: 6.9vw;
       line-height: 7.5vw;
    }
    
    .project__info_container:before {
-      content: unset;
+      //content: unset;
+       bottom: 100%;
+       right: 0;
+       left: unset;
    }
    
    .project__info_container,
@@ -557,9 +556,16 @@ header.project__header_container:before {
       margin-right: 20px;
    }
    
+   header.project__header_container:before {
+      content: '';
+   }
+   
    .project__info {
       width: 90%;
       margin-left: 20px;
+   }
+   .project__info_container:before {
+      content: unset;
    }
    
    .project__tasks_container {
