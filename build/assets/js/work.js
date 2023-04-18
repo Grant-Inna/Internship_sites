@@ -18,6 +18,8 @@ $(document).ready(function () {
          $('.region').addClass(hide);
 
          let info = $('.project__region_holder.region_' + id );
+         
+         
          info.fadeIn();
          
          $img.on( 'click', function(e) {

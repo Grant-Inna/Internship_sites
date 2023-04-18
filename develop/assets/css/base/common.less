@@ -110,6 +110,7 @@ header.project__header_container:before {
 .project__tasks_container p {
    margin-bottom: 0;
 }
+
 .project__tasks_holder {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -209,7 +210,9 @@ header.project__header_container:before {
    width: 100%;
    height: 60vw;
 }
-
+.project__map_holder {
+   position: relative;
+}
 .project__map_holder .map {
    position: relative;
    width: 100%;
@@ -224,7 +227,9 @@ header.project__header_container:before {
    width: 24px;
    height: 24px;
    
-   background-color: #5109AC;
+   background-color: #4d2aab;
+   //border: 1px solid #897dd9;
+   box-shadow: 0 0 2px 1px #897dd9;
    border-radius: 50px;
    color: white;
    
@@ -232,10 +237,17 @@ header.project__header_container:before {
    opacity: 1;
    .tr();
 }
-.region_hide {
-   opacity: 0;
+
+.region:hover {
+   box-shadow: 0 0 5px 1px #897dd9;
    .tr();
 }
+
+.region_hide {
+   opacity: 0;
+   transition: opacity .1s ease-in-out;
+}
+
 .project__map_img {
    position: absolute;
    z-index: -1;
@@ -248,19 +260,149 @@ header.project__header_container:before {
    
    .tr();
 }
+
 .Irkutsk_Oblast {
    .Irkutsk_Oblast();
-   z-index: 700;
 }
-.Tver_Oblast {
-   .Tver_Oblast();
-   z-index: 700;
+
+.Belgorod_Oblast {
+   .Belgorod_Oblast();
 }
+
+.St-Petersburg_City {
+   .St-Petersburg_City();
+}
+
+.Leningradskaya_Oblast {
+   .Leningradskaya_Oblast();
+}
+
+.Bashkortostan_Republic {
+   .Bashkortostan_Republic();
+}
+
+.North_Ossetia_Republic {
+   .North_Ossetia_Republic();
+}
+
+.Kaluga_Oblast {
+   .Kaluga_Oblast();
+}
+
+.Ryazan_Oblast {
+   .Ryazan_Oblast();
+}
+
+.Orel_Oblast {
+   .Orel_Oblast();
+}
+
+.Kaliningrad_Oblast {
+   .Kaliningrad_Oblast();
+}
+
+.Khabarovsk_Krai {
+   .Khabarovsk_Krai();
+}
+
+.Volgograd_Oblast {
+   .Volgograd_Oblast();
+}
+
+.Dagestan_Republic {
+   .Dagestan_Republic();
+}
+
+.Tuva_Republic {
+   .Tuva_Republic();
+}
+
+.Buryatiya_Republic {
+   .Buryatiya_Republic();
+}
+
+.Voronezj_Oblast {
+   .Voronezj_Oblast();
+}
+
+.Moscow_City {
+   .Moscow_City();
+}
+
+.Rostov_Oblast {
+   .Rostov_Oblast();
+}
+
+.Vladimir_Oblast {
+   .Vladimir_Oblast();
+}
+
+.Nizhny_Novgorod_Oblast {
+   .Nizhny_Novgorod_Oblast();
+}
+
 :root {
    --Irkutsk_Oblast-top: 0px;
    --Irkutsk_Oblast-left: 0px;
-   --Tver_Oblast-top: 0px;
-   --Tver_Oblast-left: 0px;
+   
+   --Belgorod_Oblast-top: 0px;
+   --Belgorod_Oblast-left: 0px;
+   
+   --St-Petersburg_City-top: 0px;
+   --St-Petersburg_City-left: 0px;
+   
+   --Leningradskaya_Oblast-top: 0px;
+   --Leningradskaya_Oblast-left: 0px;
+   
+   --Bashkortostan_Republic-top: 0px;
+   --Bashkortostan_Republic-left: 0px;
+   
+   --North_Ossetia_Republic-top: 0px;
+   --North_Ossetia_Republic-left: 0px;
+   
+   --Kaluga_Oblast-top: 0px;
+   --Kaluga_Oblast-left: 0px;
+   
+   --Ryazan_Oblast-top: 0px;
+   --Ryazan_Oblast-left: 0px;
+   
+   --Orel_Oblast-top: 0px;
+   --Orel_Oblast-left: 0px;
+   
+   --Kaliningrad_Oblast-top: 0px;
+   --Kaliningrad_Oblast-left: 0px;
+   
+   --Khabarovsk_Krai-top: 0px;
+   --Khabarovsk_Krai-left: 0px;
+   
+   --Volgograd_Oblast-top: 0px;
+   --Volgograd_Oblast-left: 0px;
+   
+   --Dagestan_Republic-top: 0px;
+   --Dagestan_Republic-left: 0px;
+   
+   --Tuva_Republic-top: 0px;
+   --Tuva_Republic-left: 0px;
+   
+   --Buryatiya_Republic-top: 0px;
+   --Buryatiya_Republic-left: 0px;
+   
+   --Voronezj_Oblast-top: 0px;
+   --Voronezj_Oblast-left: 0px;
+   
+   --Moscow_City-top: 0px;
+   --Moscow_City-left: 0px;
+   
+   --Rostov_Oblast-top: 0px;
+   --Rostov_Oblast-left: 0px;
+   
+   --Vladimir_Oblast-top: 0px;
+   --Vladimir_Oblast-left: 0px;
+   
+   --Nizhny_Novgorod_Oblast-top: 0px;
+   --Nizhny_Novgorod_Oblast-left: 0px;
+   
+   
 }
 
 #Irkutsk_Oblast {
@@ -268,40 +410,270 @@ header.project__header_container:before {
    left: calc(720px - var(--Irkutsk_Oblast-left));
 }
 
-#Tver_Oblast {
-   top: calc(360px - var(--Tver_Oblast-top));
-   left: calc(145px - var(--Tver_Oblast-left));
+#Belgorod_Oblast {
+   top: calc(455px - var(--Belgorod_Oblast-top));
+   left: calc(100px - var(--Belgorod_Oblast-left));
+}
+
+#St-Petersburg_City {
+   top: calc(295px - var(--St-Petersburg_City-top));
+   left: calc(160px - var(--St-Petersburg_City-left));
+}
+
+#Leningradskaya_Oblast {
+   top: calc(320px - var(--Leningradskaya_Oblast-top));
+   left: calc(180px - var(--Leningradskaya_Oblast-left));
+}
+
+#Bashkortostan_Republic {
+   top: calc(510px - var(--Bashkortostan_Republic-top));
+   left: calc(280px - var(--Bashkortostan_Republic-left));
+}
+
+#North_Ossetia_Republic {
+   top: calc(600px - var(--North_Ossetia_Republic-top));
+   left: calc(75px - var(--North_Ossetia_Republic-left));
+}
+
+#Kaluga_Oblast {
+   top: calc(390px - var(--Kaluga_Oblast-top));
+   left: calc(120px - var(--Kaluga_Oblast-left));
+}
+
+#Ryazan_Oblast {
+   top: calc(430px - var(--Ryazan_Oblast-top));
+   left: calc(160px - var(--Ryazan_Oblast-left));
+}
+
+#Orel_Oblast {
+   top: calc(420px - var(--Orel_Oblast-top));
+   left: calc(120px - var(--Orel_Oblast-left));
+}
+
+#Kaliningrad_Oblast {
+   top: calc(285px - var(--Kaliningrad_Oblast-top));
+   left: calc(45px - var(--Kaliningrad_Oblast-left));
+}
+
+#Khabarovsk_Krai {
+   top: calc(420px - var(--Khabarovsk_Krai-top));
+   left: calc(970px - var(--Khabarovsk_Krai-left));
+}
+
+#Volgograd_Oblast {
+   top: calc(510px - var(--Volgograd_Oblast-top));
+   left: calc(140px - var(--Volgograd_Oblast-left));
+}
+
+#Dagestan_Republic {
+   top: calc(630px - var(--Dagestan_Republic-top));
+   left: calc(100px - var(--Dagestan_Republic-left));
+}
+
+#Tuva_Republic {
+   top: calc(630px - var(--Tuva_Republic-top));
+   left: calc(655px - var(--Tuva_Republic-left));
+}
+
+#Buryatiya_Republic {
+   top: calc(550px - var(--Buryatiya_Republic-top));
+   left: calc(800px - var(--Buryatiya_Republic-left));
+}
+
+#Voronezj_Oblast {
+   top: calc(470px - var(--Voronezj_Oblast-top));
+   left: calc(120px - var(--Voronezj_Oblast-left));
+}
+
+#Moscow_City {
+   top: calc(390px - var(--Moscow_City-top));
+   left: calc(155px - var(--Moscow_City-left));
+}
+
+#Rostov_Oblast {
+   top: calc(520px - var(--Rostov_Oblast-top));
+   left: calc(93px - var(--Rostov_Oblast-left));
+}
+
+#Vladimir_Oblast {
+   top: calc(400px - var(--Vladimir_Oblast-top));
+   left: calc(185px - var(--Vladimir_Oblast-left));
+}
+
+#Nizhny_Novgorod_Oblast {
+   top: calc(430px - var(--Nizhny_Novgorod_Oblast-top));
+   left: calc(205px - var(--Nizhny_Novgorod_Oblast-left));
 }
 
 .project__region_holder h3 {
-    font-size: 20px;
-    line-height: 25px;
+   font-size: 20px;
+   line-height: 25px;
+   
+   .lg-block({
+      font-size: 18px;
+      line-height: 22px;
+   })
 }
+
 .project__region_holder {
    position: absolute;
    z-index: 800;
    padding: 25px 32px;
-   background-color: #DBE8FF;
+   background-color: rgba(219, 232, 255, 0.9);
    color: #333333;
+   text-align: center;
    
    display: none;
+   
+   .lg-block({
+      padding: 12px 18px;
+   })
 }
+
 .project__region_holder.region_Irkutsk_Oblast {
-   top: calc(540px - var(--Irkutsk_Oblast-top));
+   top: calc(540px - var(--Irkutsk_Oblast-top) - 10vw);
    left: calc(720px - var(--Irkutsk_Oblast-left));
 }
-.project__region_holder.region_Tver_Oblast {
-   top: calc(360px - var(--Tver_Oblast-top));
-   left: calc(145px - var(--Tver_Oblast-left));
+.project__region_holder.region_Belgorod_Oblast {
+   top: calc(455px - var(--Belgorod_Oblast-top) - 10vw);
+   left: calc(100px - var(--Belgorod_Oblast-left));
 }
+.project__region_holder.region_St-Petersburg_City {
+   top: calc(295px - var(--St-Petersburg_City-top) - 10vw);
+   left: calc(160px - var(--St-Petersburg_City-left));
+}
+.project__region_holder.region_Leningradskaya_Oblast {
+  top: calc(320px - var(--Leningradskaya_Oblast-top) - 10vw);
+   left: calc(180px - var(--Leningradskaya_Oblast-left));
+}
+.project__region_holder.region_Bashkortostan_Republic {
+    top: calc(510px - var(--Bashkortostan_Republic-top) - 10vw);
+   left: calc(280px - var(--Bashkortostan_Republic-left));
+}
+.project__region_holder.region_North_Ossetia_Republic {
+   top: calc(600px - var(--North_Ossetia_Republic-top) - 10vw);
+   left: calc(75px - var(--North_Ossetia_Republic-left));
+}
+.project__region_holder.region_Kaluga_Oblast {
+   top: calc(390px - var(--Kaluga_Oblast-top) - 10vw);
+   left: calc(120px - var(--Kaluga_Oblast-left));
+}
+.project__region_holder.region_Ryazan_Oblast {
+   top: calc(430px - var(--Ryazan_Oblast-top) - 10vw);
+   left: calc(160px - var(--Ryazan_Oblast-left));
+}
+.project__region_holder.region_Orel_Oblast {
+   top: calc(420px - var(--Orel_Oblast-top) - 10vw);
+   left: calc(120px - var(--Orel_Oblast-left));
+}
+.project__region_holder.region_Kaliningrad_Oblast {
+   top: calc(285px - var(--Kaliningrad_Oblast-top) - 10vw);
+   left: calc(45px - var(--Kaliningrad_Oblast-left));
+}
+.project__region_holder.region_Khabarovsk_Krai {
+   top: calc(375px - var(--Khabarovsk_Krai-top) - 10vw);
+   left: unset;
+   right: 5%;
+}
+.project__region_holder.region_Volgograd_Oblast {
+   top: calc(510px - var(--Volgograd_Oblast-top) - 10vw);
+   left: calc(140px - var(--Volgograd_Oblast-left));
+}
+.project__region_holder.region_Dagestan_Republic {
+   top: calc(630px - var(--Dagestan_Republic-top) - 10vw);
+   left: calc(100px - var(--Dagestan_Republic-left));
+}
+.project__region_holder.region_Tuva_Republic {
+   top: calc(630px - var(--Tuva_Republic-top) - 10vw);
+   left: calc(655px - var(--Tuva_Republic-left));
+}
+.project__region_holder.region_Buryatiya_Republic {
+   top: calc(540px - var(--Buryatiya_Republic-top) - 10vw);
+   left: calc(800px - var(--Buryatiya_Republic-left));
+}
+.project__region_holder.region_Voronezj_Oblast {
+   top: calc(470px - var(--Voronezj_Oblast-top) - 10vw);
+   left: calc(120px - var(--Voronezj_Oblast-left));
+}
+.project__region_holder.region_Moscow_City {
+   top: calc(390px - var(--Moscow_City-top) - 10vw);
+   left: calc(155px - var(--Moscow_City-left));
+}
+.project__region_holder.region_Rostov_Oblast {
+   top: calc(520px - var(--Rostov_Oblast-top) - 10vw);
+   left: calc(93px - var(--Rostov_Oblast-left));
+}
+.project__region_holder.region_Vladimir_Oblast {
+   top: calc(400px - var(--Vladimir_Oblast-top) - 10vw);
+   left: calc(185px - var(--Vladimir_Oblast-left));
+}
+.project__region_holder.region_Nizhny_Novgorod_Oblast {
+   top: calc(430px - var(--Nizhny_Novgorod_Oblast-top) - 10vw);
+   left: calc(205px - var(--Nizhny_Novgorod_Oblast-left));
+}
+
 
 @media screen and (max-width: 1250px) {
    :root {
       --Irkutsk_Oblast-top: 100px;
       --Irkutsk_Oblast-left: 130px;
       
-      --Tver_Oblast-top: 65px;
-      --Tver_Oblast-left: 25px;
+      --Belgorod_Oblast-top: 85px;
+      --Belgorod_Oblast-left: 15px;
+      
+      --St-Petersburg_City-top: 60px;
+      --St-Petersburg_City-left: 30px;
+      
+      --Leningradskaya_Oblast-top: 60px;
+      --Leningradskaya_Oblast-left: 30px;
+      
+      --Bashkortostan_Republic-top: 95px;
+      --Bashkortostan_Republic-left: 55px;
+      
+      --North_Ossetia_Republic-top: 110px;
+      --North_Ossetia_Republic-left: 20px;
+      
+      --Kaluga_Oblast-top: 73px;
+      --Kaluga_Oblast-left: 25px;
+      
+      --Ryazan_Oblast-top: 80px;
+      --Ryazan_Oblast-left: 30px;
+      
+      --Orel_Oblast-top: 77px;
+      --Orel_Oblast-left: 30px;
+      
+      --Kaliningrad_Oblast-top: 50px;
+      --Kaliningrad_Oblast-left: 20px;
+      
+      --Khabarovsk_Krai-top: 80px;
+      --Khabarovsk_Krai-left: 180px;
+      
+      --Volgograd_Oblast-top: 97px;
+      --Volgograd_Oblast-left: 27px;
+      
+      --Dagestan_Republic-top: 110px;
+      --Dagestan_Republic-left: 20px;
+      
+      --Tuva_Republic-top: 117px;
+      --Tuva_Republic-left: 120px;
+      
+      --Buryatiya_Republic-top: 100px;
+      --Buryatiya_Republic-left: 147px;
+      
+      --Voronezj_Oblast-top: 87px;
+      --Voronezj_Oblast-left: 21px;
+      
+      --Moscow_City-top: 72px;
+      --Moscow_City-left: 30px;
+      
+      --Rostov_Oblast-top: 97px;
+      --Rostov_Oblast-left: 21px;
+      
+      --Vladimir_Oblast-top: 73px;
+      --Vladimir_Oblast-left: 32px;
+      
+      --Nizhny_Novgorod_Oblast-top: 80px;
+      --Nizhny_Novgorod_Oblast-left: 40px;
    }
    
    .project__map_holder .map {
@@ -318,8 +690,62 @@ header.project__header_container:before {
       --Irkutsk_Oblast-top: 130px;
       --Irkutsk_Oblast-left: 190px;
       
-      --Tver_Oblast-top: 95px;
-      --Tver_Oblast-left: 35px;
+      --Belgorod_Oblast-top: 125px;
+      --Belgorod_Oblast-left: 30px;
+      
+      --St-Petersburg_City-top: 80px;
+      --St-Petersburg_City-left: 45px;
+      
+      --Leningradskaya_Oblast-top: 80px;
+      --Leningradskaya_Oblast-left: 40px;
+      
+      --Bashkortostan_Republic-top: 140px;
+      --Bashkortostan_Republic-left: 78px;
+      
+      --North_Ossetia_Republic-top: 160px;
+      --North_Ossetia_Republic-left: 30px;
+      
+      --Kaluga_Oblast-top: 105px;
+      --Kaluga_Oblast-left: 35px;
+      
+      --Ryazan_Oblast-top: 117px;
+      --Ryazan_Oblast-left: 45px;
+      
+      --Orel_Oblast-top: 110px;
+      --Orel_Oblast-left: 35px;
+      
+      --Kaliningrad_Oblast-top: 75px;
+      --Kaliningrad_Oblast-left: 15px;
+      
+      --Khabarovsk_Krai-top: 70px;
+      --Khabarovsk_Krai-left: 205px;
+      
+      --Volgograd_Oblast-top: 138px;
+      --Volgograd_Oblast-left: 40px;
+      
+      --Dagestan_Republic-top: 160px;
+      --Dagestan_Republic-left: 20px;
+      
+      --Tuva_Republic-top: 170px;
+      --Tuva_Republic-left: 175px;
+      
+      --Buryatiya_Republic-top: 150px;
+      --Buryatiya_Republic-left: 213px;
+      
+      --Voronezj_Oblast-top: 127px;
+      --Voronezj_Oblast-left: 29px;
+      
+      --Moscow_City-top: 108px;
+      --Moscow_City-left: 40px;
+      
+      --Rostov_Oblast-top: 142px;
+      --Rostov_Oblast-left: 29px;
+      
+      --Vladimir_Oblast-top: 108px;
+      --Vladimir_Oblast-left: 47px;
+      
+      --Nizhny_Novgorod_Oblast-top: 117px;
+      --Nizhny_Novgorod_Oblast-left: 53px;
    }
    
    .project__map_holder .map {
@@ -349,7 +775,7 @@ header.project__header_container:before {
    
    .project__tasks_holder {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat( 4 / 1fr );
+      grid-template-rows: repeat(4 / 1fr);
    }
    
    .icon-task {
@@ -362,6 +788,7 @@ header.project__header_container:before {
    .icon-task-2 {
       height: 65px;
    }
+   
    .icon-task-4 {
       height: 70px;
    }
@@ -376,11 +803,65 @@ header.project__header_container:before {
 
 @media (max-width: 950px) {
    :root {
-      --Irkutsk_Oblast-top: 220px;
+      --Irkutsk_Oblast-top: 230px;
       --Irkutsk_Oblast-left: 310px;
       
-      --Tver_Oblast-top: 155px;
-      --Tver_Oblast-left: 65px;
+      --Belgorod_Oblast-top: 200px;
+      --Belgorod_Oblast-left: 50px;
+      
+      --St-Petersburg_City-top: 130px;
+      --St-Petersburg_City-left: 70px;
+      
+      --Leningradskaya_Oblast-top: 140px;
+      --Leningradskaya_Oblast-left: 70px;
+      
+      --Bashkortostan_Republic-top: 220px;
+      --Bashkortostan_Republic-left: 126px;
+      
+      --North_Ossetia_Republic-top: 260px;
+      --North_Ossetia_Republic-left: 45px;
+      
+      --Kaluga_Oblast-top: 175px;
+      --Kaluga_Oblast-left: 55px;
+      
+      --Ryazan_Oblast-top: 190px;
+      --Ryazan_Oblast-left: 70px;
+      
+      --Orel_Oblast-top: 180px;
+      --Orel_Oblast-left: 51px;
+      
+      --Kaliningrad_Oblast-top: 125px;
+      --Kaliningrad_Oblast-left: 25px;
+      
+      --Khabarovsk_Krai-top: 150px;
+      --Khabarovsk_Krai-left: 375px;
+      
+      --Volgograd_Oblast-top: 222px;
+      --Volgograd_Oblast-left: 62px;
+      
+      --Dagestan_Republic-top: 270px;
+      --Dagestan_Republic-left: 40px;
+      
+      --Tuva_Republic-top: 275px;
+      --Tuva_Republic-left: 283px;
+      
+      --Buryatiya_Republic-top: 242px;
+      --Buryatiya_Republic-left: 346px;
+      
+      --Voronezj_Oblast-top: 205px;
+      --Voronezj_Oblast-left: 48px;
+      
+      --Moscow_City-top: 172px;
+      --Moscow_City-left: 67px;
+      
+      --Rostov_Oblast-top: 227px;
+      --Rostov_Oblast-left: 46px;
+      
+      --Vladimir_Oblast-top: 178px;
+      --Vladimir_Oblast-left: 77px;
+      
+      --Nizhny_Novgorod_Oblast-top: 183px;
+      --Nizhny_Novgorod_Oblast-left: 87px;
    }
    
    .project__map_holder .map {
@@ -392,8 +873,63 @@ header.project__header_container:before {
    :root {
       --Irkutsk_Oblast-top: 270px;
       --Irkutsk_Oblast-left: 370px;
-      --Tver_Oblast-top: 185px;
-      --Tver_Oblast-left: 75px;
+      
+      --Belgorod_Oblast-top: 235px;
+      --Belgorod_Oblast-left: 65px;
+      
+      --St-Petersburg_City-top: 160px;
+      --St-Petersburg_City-left: 90px;
+      
+      --Leningradskaya_Oblast-top: 160px;
+      --Leningradskaya_Oblast-left: 90px;
+      
+      --Bashkortostan_Republic-top: 267px;
+      --Bashkortostan_Republic-left: 145px;
+      
+      --North_Ossetia_Republic-top: 310px;
+      --North_Ossetia_Republic-left: 53px;
+      
+      --Kaluga_Oblast-top: 210px;
+      --Kaluga_Oblast-left: 65px;
+      
+      --Ryazan_Oblast-top: 225px;
+      --Ryazan_Oblast-left: 88px;
+      
+      --Orel_Oblast-top: 218px;
+      --Orel_Oblast-left: 70px;
+      
+      --Kaliningrad_Oblast-top: 155px;
+      --Kaliningrad_Oblast-left: 25px;
+      
+      --Khabarovsk_Krai-top: 188px;
+      --Khabarovsk_Krai-left: 462px;
+      
+      --Volgograd_Oblast-top: 265px;
+      --Volgograd_Oblast-left: 75px;
+      
+      --Dagestan_Republic-top: 320px;
+      --Dagestan_Republic-left: 50px;
+      
+      --Tuva_Republic-top: 325px;
+      --Tuva_Republic-left: 338px;
+      
+      --Buryatiya_Republic-top: 287px;
+      --Buryatiya_Republic-left: 413px;
+      
+      --Voronezj_Oblast-top: 248px;
+      --Voronezj_Oblast-left: 62px;
+      
+      --Moscow_City-top: 206px;
+      --Moscow_City-left: 77px;
+      
+      --Rostov_Oblast-top: 270px;
+      --Rostov_Oblast-left: 56px;
+      
+      --Vladimir_Oblast-top: 210px;
+      --Vladimir_Oblast-left: 87px;
+      
+      --Nizhny_Novgorod_Oblast-top: 216px;
+      --Nizhny_Novgorod_Oblast-left: 103px;
    }
    
    .project__map_holder .map {
@@ -432,8 +968,63 @@ header.project__header_container:before {
    :root {
       --Irkutsk_Oblast-top: 320px;
       --Irkutsk_Oblast-left: 430px;
-      --Tver_Oblast-top: 215px;
-    --Tver_Oblast-left: 85px;
+      
+      --Belgorod_Oblast-top: 275px;
+      --Belgorod_Oblast-left: 75px;
+      
+      --St-Petersburg_City-top: 180px;
+      --St-Petersburg_City-left: 110px;
+      
+      --Leningradskaya_Oblast-top: 197px;
+      --Leningradskaya_Oblast-left: 105px;
+      
+      --Bashkortostan_Republic-top: 310px;
+      --Bashkortostan_Republic-left: 170px;
+      
+      --North_Ossetia_Republic-top: 360px;
+      --North_Ossetia_Republic-left: 60px;
+      
+      --Kaluga_Oblast-top: 245px;
+      --Kaluga_Oblast-left: 75px;
+      
+      --Ryazan_Oblast-top: 265px;
+      --Ryazan_Oblast-left: 100px;
+      
+      --Orel_Oblast-top: 253px;
+      --Orel_Oblast-left: 78px;
+      
+      --Kaliningrad_Oblast-top: 170px;
+      --Kaliningrad_Oblast-left: 35px;
+      
+      --Khabarovsk_Krai-top: 227px;
+      --Khabarovsk_Krai-left: 550px;
+      
+      --Volgograd_Oblast-top: 305px;
+      --Volgograd_Oblast-left: 85px;
+      
+      --Dagestan_Republic-top: 370px;
+      --Dagestan_Republic-left: 60px;
+      
+      --Tuva_Republic-top: 379px;
+      --Tuva_Republic-left: 391px;
+      
+      --Buryatiya_Republic-top: 332px;
+      --Buryatiya_Republic-left: 474px;
+      
+      --Voronezj_Oblast-top: 286px;
+      --Voronezj_Oblast-left: 72px;
+      
+      --Moscow_City-top: 243px;
+      --Moscow_City-left: 87px;
+      
+      --Rostov_Oblast-top: 314px;
+      --Rostov_Oblast-left: 63px;
+      
+      --Vladimir_Oblast-top: 250px;
+      --Vladimir_Oblast-left: 94px;
+      
+      --Nizhny_Novgorod_Oblast-top: 256px;
+      --Nizhny_Novgorod_Oblast-left: 118px;
    }
    
    .project__map_holder .map {
@@ -471,9 +1062,9 @@ header.project__header_container:before {
    
    .project__info_container:before {
       //content: unset;
-       bottom: 100%;
-       right: 0;
-       left: unset;
+      bottom: 100%;
+      right: 0;
+      left: unset;
    }
    
    .project__info_container,
@@ -509,12 +1100,72 @@ header.project__header_container:before {
    :root {
       --Irkutsk_Oblast-top: 340px;
       --Irkutsk_Oblast-left: 455px;
-      --Tver_Oblast-top: 230px;
-    --Tver_Oblast-left: 90px;
+      
+      --Belgorod_Oblast-top: 290px;
+      --Belgorod_Oblast-left: 79px;
+      
+      --St-Petersburg_City-top: 200px;
+      --St-Petersburg_City-left: 110px;
+      
+      --Leningradskaya_Oblast-top: 200px;
+      --Leningradskaya_Oblast-left: 115px;
+      
+      --Bashkortostan_Republic-top: 325px;
+      --Bashkortostan_Republic-left: 180px;
+      
+      --North_Ossetia_Republic-top: 380px;
+      --North_Ossetia_Republic-left: 60px;
+      
+      --Kaluga_Oblast-top: 257px;
+      --Kaluga_Oblast-left: 80px;
+      
+      --Ryazan_Oblast-top: 275px;
+      --Ryazan_Oblast-left: 100px;
+      
+      --Orel_Oblast-top: 265px;
+      --Orel_Oblast-left: 78px;
+      
+      --Kaliningrad_Oblast-top: 179px;
+      --Kaliningrad_Oblast-left: 35px;
+      
+      --Khabarovsk_Krai-top: 243px;
+      --Khabarovsk_Krai-left: 584px;
+      
+      --Volgograd_Oblast-top: 325px;
+      --Volgograd_Oblast-left: 89px;
+      
+      --Dagestan_Republic-top: 390px;
+      --Dagestan_Republic-left: 60px;
+      
+      --Tuva_Republic-top: 398px;
+      --Tuva_Republic-left: 414px;
+      
+      --Buryatiya_Republic-top: 349px;
+      --Buryatiya_Republic-left: 499px;
+      
+      --Voronezj_Oblast-top: 300px;
+      --Voronezj_Oblast-left: 82px;
+      
+      --Moscow_City-top: 252px;
+      --Moscow_City-left: 96px;
+      
+      --Rostov_Oblast-top: 328px;
+      --Rostov_Oblast-left: 63px;
+      
+      --Vladimir_Oblast-top: 260px;
+      --Vladimir_Oblast-left: 104px;
+      
+      --Nizhny_Novgorod_Oblast-top: 269px;
+      --Nizhny_Novgorod_Oblast-left: 121px;
    }
    
    .project__map_holder .map {
       width: 460px;
+   }
+   
+   .region {
+      width: 22px;
+      height: 22px;
    }
    
    .project__link_container {
@@ -539,9 +1190,34 @@ header.project__header_container:before {
    }
 }
 
+@media (max-width: 490px) {
+   :root {
+      --Irkutsk_Oblast-top: 338px;
+      --Irkutsk_Oblast-left: 455px;
+      
+      --Khabarovsk_Krai-top: 246px;
+      --Khabarovsk_Krai-left: 593px;
+      
+      --Dagestan_Republic-top: 400px;
+      --Dagestan_Republic-left: 60px;
+      
+      --Tuva_Republic-top: 403px;
+      --Tuva_Republic-left: 418px;
+      
+      --Buryatiya_Republic-top: 353px;
+      --Buryatiya_Republic-left: 508px;
+   }
+}
+
 @media (max-width: 460px) {
    .region {
       display: none;
+   }
+   
+   .project__map_holder .map {
+      width: 96%;
+      margin-right: 2%;
+      margin-left: 2%;
    }
    
    .project__link_container {
@@ -564,6 +1240,7 @@ header.project__header_container:before {
       width: 90%;
       margin-left: 20px;
    }
+   
    .project__info_container:before {
       content: unset;
    }
