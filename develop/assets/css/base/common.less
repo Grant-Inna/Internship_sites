@@ -85,6 +85,10 @@ header.project__header_container:before {
    margin-top: 130px;
 }
 
+.project__map_container {
+   margin-top: 100px;
+}
+
 .project__info_container:before {
    content: '';
    position: absolute;
@@ -907,7 +911,9 @@ header.project__header_container:before {
       line-height: 58px;
    }
    
-   
+   .project__map_container {
+      margin-top: 100px;
+   }
    .project__map_container h2 {
       width: 90%;
    }
@@ -1010,16 +1016,18 @@ header.project__header_container:before {
    }
    
    .project__info_container:before {
-      //content: unset;
+      width: 73%;
       bottom: 100%;
       right: 0;
       left: unset;
    }
    
    .project__info_container,
-   .project__tasks_container,
-   .project__map_container {
+   .project__tasks_container {
       margin-top: 15vw;
+   }
+   .project__map_container {
+      margin-top: 12vw;
    }
    
    .project__info,
@@ -1203,17 +1211,9 @@ header.project__header_container:before {
       margin-right: 20px;
    }
    
-   header.project__header_container:before {
-      //content: '';
-   }
-   
    .project__info {
       width: 90%;
       margin-left: 20px;
-   }
-   
-   .project__info_container:before {
-      //content: unset;
    }
    
    .project__tasks_container h2 {
