@@ -17,16 +17,31 @@ $(document).ready(function () {
          $img.addClass(id);
          $('.region').addClass(hide);
 
-         let info = $('.project__region_holder.region_' + id );
+         let info = $('.project__region_holder.card_' + id );
          
          
          info.fadeIn();
          
          $img.on( 'click', function(e) {
-            console.log(e.target);
             $('.region_hide').removeClass(hide);
             $(this).removeClass(id);
             $('.project__region_holder').fadeOut();
+         });
+      });
+      
+      $('.project__region_names div').on( 'click', function (event) {
+         let target = event.target,
+             data = $(target).data('region'),
+             $img = $('.project__map_img');
+         
+         $('.region_chosen').removeClass('region_chosen');
+         $(this).addClass('region_chosen');
+         $img.removeAttr('class').addClass('project__map_img');
+         $img.addClass(data);
+         
+         $img.on( 'click', function(e) {
+            $('.region_chosen').removeClass('region_chosen');
+            $(this).removeClass(data);
          });
       });
     
