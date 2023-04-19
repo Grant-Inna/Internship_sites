@@ -721,7 +721,7 @@ header.project__header_container:before {
    
    .project__tasks_holder {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(4 / 1fr);
+      grid-template-rows: repeat( 4, 1fr );
    }
    
    .icon-task {
@@ -815,6 +815,10 @@ header.project__header_container:before {
    .project__map_holder .map {
       width: 700px
    }
+   
+   .project__map_container h2.project-detailed__title__text.project-detailed__title__text-is {
+      width: 90%;
+   }
 }
 
 @media (max-width: 768px) {
@@ -903,9 +907,6 @@ header.project__header_container:before {
       line-height: 58px;
    }
    
-   .project__map_container h2.project-detailed__title__text.project-detailed__title__text-is {
-      width: 90%;
-   }
    
    .project__map_container h2 {
       width: 90%;
@@ -1106,11 +1107,16 @@ header.project__header_container:before {
       --Nizhny_Novgorod_Oblast-top: 269px;
       --Nizhny_Novgorod_Oblast-left: 121px;
    }
-   
+   .project__info_container {
+      margin-top: 20vw;
+   }
    .project__map_holder .map {
       width: 460px;
    }
-   
+   //
+   //.project__tasks_holder {
+   //   grid-gap: 15px;
+   //}
    .region {
       width: 22px;
       height: 22px;
@@ -1211,7 +1217,7 @@ header.project__header_container:before {
    }
    
    .project__tasks_container h2 {
-      margin-bottom: 2rem !important;
+      margin-bottom: 2.5rem !important;
    }
    .project__tasks_container {
       grid-gap: 5px;
