@@ -1,10 +1,6 @@
 $(document).ready(function () {
-   /* читать дальше */
    
    if ($('.project-is').length > 0) {
-      /*$(".map").mousemove(function (pos) {
-         console.log('Относительные координаты: По оси X:'+pos.offsetX+', По оси Y:'+pos.offsetY);
-      });*/
       
       $(".map .region").on( 'click', function (event) {
          let target = event.target,
@@ -44,9 +40,6 @@ $(document).ready(function () {
             $(this).removeClass(data);
          });
       });
-    
-
+      
    }
-   
-   
 });
