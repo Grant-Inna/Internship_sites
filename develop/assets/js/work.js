@@ -14,8 +14,6 @@ $(document).ready(function () {
          $('.region').addClass(hide);
 
          let info = $('.project__region_holder.card_' + id );
-         
-         
          info.fadeIn();
          
          $img.on( 'click', function(e) {
@@ -31,12 +29,15 @@ $(document).ready(function () {
              $img = $('.project__map_img');
          
          $('.region_chosen').removeClass('region_chosen');
+         $('.project__region_holder[ id^="card_big-"]').fadeOut();
+         $('.project__region_holder.card_' + data + '[ id^="card_big-"]').fadeIn();
          $(this).addClass('region_chosen');
          $img.removeAttr('class').addClass('project__map_img');
          $img.addClass(data);
          
          $img.on( 'click', function(e) {
             $('.region_chosen').removeClass('region_chosen');
+            $('.project__region_holder[ id^="card_big-"]').fadeOut();
             $(this).removeClass(data);
          });
       });

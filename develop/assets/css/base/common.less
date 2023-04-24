@@ -138,10 +138,13 @@ header.project__header_container:before {
    .task-2();
    height: 120%;
    width: 45%;
-   min-width: 180px;
+   //min-width: 180px;
 }
 .icon-task-3 { .task-3() }
-.icon-task-4 { .task-4() }
+.icon-task-4 {
+   .task-4();
+   height: 90px;
+}
 
 .project__item p {
    flex-grow: 1;
@@ -430,7 +433,11 @@ header.project__header_container:before {
 .project__region_holder {
    position: absolute;
    z-index: 800;
+   
+   max-width: 350px;
+   
    padding: 25px 32px;
+   box-sizing: border-box;
    background-color: rgba(219, 232, 255, 0.9);
    color: #333333;
    text-align: center;
@@ -441,86 +448,117 @@ header.project__header_container:before {
       padding: 12px 18px;
    })
 }
+.project__region_info {
+   margin-top: 1rem;
+
+}
+.project__region_info .region__info-name {
+   text-align: left;
+   font-size: 18px;
+   line-height: 22px;
+   margin-bottom: .9rem;
+}
+.project__region_info .region__info {
+   .flex();
+   .items-center();
+   text-align: left;
+   margin-bottom: .4rem;
+   
+   color: #333333;
+   .tr();
+}
+.project__region_info .region__info:hover {
+   color: #9155ad;
+   .tr();
+}
+.project__region_info .region__info:hover .icon-phone {
+   background-image: url("../data/phone-hover.svg");
+   .tr();
+}
+.project__region_info .region__info:hover .icon-mail {
+   background-image: url("../data/mail-hover.svg");
+   .tr();
+}
 
 .project__region_holder.card_Irkutsk_Oblast {
-   top: calc(540px - var(--Irkutsk_Oblast-top) - 10vw);
+   top: calc(540px - var(--Irkutsk_Oblast-top) - 20vw);
    left: calc(720px - var(--Irkutsk_Oblast-left));
 }
 .project__region_holder.card_Belgorod_Oblast {
-   top: calc(455px - var(--Belgorod_Oblast-top) - 10vw);
+   top: calc(455px - var(--Belgorod_Oblast-top) - 20vw);
    left: calc(100px - var(--Belgorod_Oblast-left));
 }
 .project__region_holder.card_St-Petersburg_City {
-   top: calc(295px - var(--St-Petersburg_City-top) - 10vw);
+   top: calc(295px - var(--St-Petersburg_City-top) - 20vw);
    left: calc(160px - var(--St-Petersburg_City-left));
 }
 .project__region_holder.card_Leningradskaya_Oblast {
-  top: calc(320px - var(--Leningradskaya_Oblast-top) - 10vw);
+  top: calc(320px - var(--Leningradskaya_Oblast-top) - 20vw);
    left: calc(180px - var(--Leningradskaya_Oblast-left));
 }
 .project__region_holder.card_Bashkortostan_Republic {
-    top: calc(510px - var(--Bashkortostan_Republic-top) - 10vw);
+    top: calc(510px - var(--Bashkortostan_Republic-top) - 20vw);
    left: calc(280px - var(--Bashkortostan_Republic-left));
 }
 .project__region_holder.card_North_Ossetia_Republic {
-   top: calc(600px - var(--North_Ossetia_Republic-top) - 10vw);
+   top: calc(600px - var(--North_Ossetia_Republic-top) - 20vw);
    left: calc(75px - var(--North_Ossetia_Republic-left));
 }
 .project__region_holder.card_Kaluga_Oblast {
-   top: calc(390px - var(--Kaluga_Oblast-top) - 10vw);
+   top: calc(390px - var(--Kaluga_Oblast-top) - 20vw);
    left: calc(120px - var(--Kaluga_Oblast-left));
 }
 .project__region_holder.card_Ryazan_Oblast {
-   top: calc(430px - var(--Ryazan_Oblast-top) - 10vw);
+   top: calc(430px - var(--Ryazan_Oblast-top) - 20vw);
    left: calc(160px - var(--Ryazan_Oblast-left));
 }
 .project__region_holder.card_Orel_Oblast {
-   top: calc(420px - var(--Orel_Oblast-top) - 10vw);
+   top: calc(420px - var(--Orel_Oblast-top) - 20vw);
    left: calc(120px - var(--Orel_Oblast-left));
 }
 .project__region_holder.card_Kaliningrad_Oblast {
-   top: calc(285px - var(--Kaliningrad_Oblast-top) - 10vw);
+   top: calc(285px - var(--Kaliningrad_Oblast-top) - 20vw);
    left: calc(45px - var(--Kaliningrad_Oblast-left));
 }
 .project__region_holder.card_Khabarovsk_Krai {
-   top: calc(375px - var(--Khabarovsk_Krai-top) - 10vw);
+   top: calc(375px - var(--Khabarovsk_Krai-top) - 20vw);
    left: unset;
    right: 5%;
 }
 .project__region_holder.card_Volgograd_Oblast {
-   top: calc(510px - var(--Volgograd_Oblast-top) - 10vw);
+   top: calc(510px - var(--Volgograd_Oblast-top) - 20vw);
    left: calc(140px - var(--Volgograd_Oblast-left));
 }
 .project__region_holder.card_Dagestan_Republic {
-   top: calc(630px - var(--Dagestan_Republic-top) - 10vw);
+   top: calc(630px - var(--Dagestan_Republic-top) - 20vw);
    left: calc(100px - var(--Dagestan_Republic-left));
 }
 .project__region_holder.card_Tuva_Republic {
-   top: calc(630px - var(--Tuva_Republic-top) - 10vw);
+   top: calc(630px - var(--Tuva_Republic-top) - 20vw);
    left: calc(655px - var(--Tuva_Republic-left));
 }
 .project__region_holder.card_Buryatiya_Republic {
-   top: calc(540px - var(--Buryatiya_Republic-top) - 10vw);
+   top: calc(540px - var(--Buryatiya_Republic-top) - 20vw);
    left: calc(800px - var(--Buryatiya_Republic-left));
 }
 .project__region_holder.card_Voronezj_Oblast {
-   top: calc(470px - var(--Voronezj_Oblast-top) - 10vw);
+   top: calc(470px - var(--Voronezj_Oblast-top) - 20vw);
    left: calc(120px - var(--Voronezj_Oblast-left));
 }
 .project__region_holder.card_Moscow_City {
-   top: calc(390px - var(--Moscow_City-top) - 10vw);
+   top: calc(390px - var(--Moscow_City-top) - 20vw);
    left: calc(155px - var(--Moscow_City-left));
 }
 .project__region_holder.card_Rostov_Oblast {
-   top: calc(520px - var(--Rostov_Oblast-top) - 10vw);
+   top: calc(520px - var(--Rostov_Oblast-top) - 20vw);
    left: calc(93px - var(--Rostov_Oblast-left));
 }
 .project__region_holder.card_Vladimir_Oblast {
-   top: calc(400px - var(--Vladimir_Oblast-top) - 10vw);
+   top: calc(400px - var(--Vladimir_Oblast-top) - 20vw);
    left: calc(185px - var(--Vladimir_Oblast-left));
 }
 .project__region_holder.card_Nizhny_Novgorod_Oblast {
-   top: calc(430px - var(--Nizhny_Novgorod_Oblast-top) - 10vw);
+   top: calc(430px - var(--Nizhny_Novgorod_Oblast-top) - 20vw);
    left: calc(205px - var(--Nizhny_Novgorod_Oblast-left));
 }
 
@@ -560,7 +598,9 @@ header.project__header_container:before {
    color: #333333
 }
 
-
+.ml-30 {
+   margin-left: 30px;
+}
 
 @media screen and (max-width: 1250px) {
    :root {
@@ -892,6 +932,15 @@ header.project__header_container:before {
       --Nizhny_Novgorod_Oblast-left: 103px;
    }
    
+   
+   .project__region_holder[ id^="card_big-"] {
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 80%;
+   }
+   
+   
    .project__map_holder .map {
       width: 600px;
       height: 380px;
@@ -1196,9 +1245,18 @@ header.project__header_container:before {
    .project__map_container {
       margin-bottom: 50px;
    }
+   
+    .project__region_holder[ id^="card_big-"] {
+      width: 86%;
+   }
+   .project__region_info .region__info-name {
+      font-size: 16px;
+    line-height: 20px;
+   }
+   
    .project__map_holder .map {
       width: 96%;
-      height: 65vw;
+      height: 70vw;
       margin: -30px 2% 10px;
    }
    .project__map_container h2 {

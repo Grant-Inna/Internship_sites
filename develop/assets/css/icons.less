@@ -1,4 +1,46 @@
-.icon-svg( @folder, @name ) {
-   background-image: url("../data/@{folder}/@{name}.svg");
+.icon-svg( @name ) {
+   background-image: url("../data/@{name}.svg");
    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+   width: 20px;
+   height: 20px;
+   
+   margin-right: 10px;
+   
+   animation-duration: 2s;
+   animation-name: shake;
+    animation-iteration-count: infinite;
+}
+.icon-phone {
+   .icon-svg('phone');
+}
+.icon-mail {
+   .icon-svg('mail');
+}
+
+
+@keyframes shake {
+   0% {
+      transform: rotateZ(0);
+   }
+   10% {
+      transform: rotateZ(0);
+   }
+   18% {
+      transform: rotateZ(15deg);
+   }
+   23% {
+      transform: rotateZ(-8deg);
+   }
+   28% {
+      transform: rotateZ(9deg);
+   }
+   32% {
+      transform: rotateZ(0);
+   }
+   100% {
+      transform: none;
+   }
 }
