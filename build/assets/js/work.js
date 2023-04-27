@@ -26,11 +26,17 @@ $(document).ready(function () {
       $('.project__region_names div').on( 'click', function (event) {
          let target = event.target,
              data = $(target).data('region'),
-             $img = $('.project__map_img');
+             $img = $('.project__map_img'),
+             $names_holder = $('.project__region_names'),
+             $card = $('.project__region_holder.card_' + data + '[ id^="card_big-"]');
          
          $('.region_chosen').removeClass('region_chosen');
+         $names_holder.css( 'margin-top', '0');
          $('.project__region_holder[ id^="card_big-"]').fadeOut();
-         $('.project__region_holder.card_' + data + '[ id^="card_big-"]').fadeIn();
+         if ($card.length) {
+            $card.fadeIn();
+            $names_holder.css( 'margin-top', '160px');
+         }
          $(this).addClass('region_chosen');
          $img.removeAttr('class').addClass('project__map_img');
          $img.addClass(data);
@@ -39,6 +45,7 @@ $(document).ready(function () {
             $('.region_chosen').removeClass('region_chosen');
             $('.project__region_holder[ id^="card_big-"]').fadeOut();
             $(this).removeClass(data);
+            $names_holder.css( 'margin-top', '0');
          });
       });
       
