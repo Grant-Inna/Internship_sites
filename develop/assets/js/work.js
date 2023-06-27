@@ -35,7 +35,7 @@ $(document).ready(function () {
          $('.project__region_holder[ id^="card_big-"]').fadeOut();
          if ($card.length) {
             $card.fadeIn();
-            $names_holder.css( 'margin-top', '220px');
+            $names_holder.css( 'margin-top', '180px');
          }
          $(this).addClass('region_chosen');
          $img.removeAttr('class').addClass('project__map_img');

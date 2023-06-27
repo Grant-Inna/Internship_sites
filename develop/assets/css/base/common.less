@@ -52,7 +52,7 @@
 
 header.project__header_container {
    position: relative;
-   z-index: 100;
+   //z-index: 100;
    width: 100%;
    height: 490px;
    
@@ -274,6 +274,7 @@ header.project__header_container:before {
 .Rostov_Oblast { .Rostov_Oblast(); }
 .Vladimir_Oblast { .Vladimir_Oblast(); }
 .Nizhny_Novgorod_Oblast { .Nizhny_Novgorod_Oblast(); }
+.Sverdlovsk_Oblast { .Sverdlovsk_Oblast(); }
 
 :root {
    --Irkutsk_Oblast-top: 0px;
@@ -335,6 +336,9 @@ header.project__header_container:before {
    
    --Nizhny_Novgorod_Oblast-top: 0px;
    --Nizhny_Novgorod_Oblast-left: 0px;
+   
+   --Sverdlovsk_Oblast-top: 0px;
+   --Sverdlovsk_Oblast-left: 0px;
    
    
 }
@@ -418,6 +422,10 @@ header.project__header_container:before {
 #Nizhny_Novgorod_Oblast {
    top: calc(430px - var(--Nizhny_Novgorod_Oblast-top));
    left: calc(205px - var(--Nizhny_Novgorod_Oblast-left));
+}
+#Sverdlovsk_Oblast {
+    top: calc(390px - var(--Sverdlovsk_Oblast-top));
+    left: calc(290px - var(--Sverdlovsk_Oblast-left));
 }
 
 .project__region_holder h3 {
@@ -565,6 +573,10 @@ header.project__header_container:before {
    top: calc(350px - var(--Nizhny_Novgorod_Oblast-top) - 10vw);
    left: calc(340px - var(--Nizhny_Novgorod_Oblast-left));
 }
+.project__region_holder.card_Sverdlovsk_Oblast {
+    top: calc(280px - var(--Sverdlovsk_Oblast-top) - 10vw);
+    left: calc(350px - var(--Sverdlovsk_Oblast-left));
+}
 
 
 .project__region_names {
@@ -671,6 +683,9 @@ header.project__header_container:before {
       
       --Nizhny_Novgorod_Oblast-top: 80px;
       --Nizhny_Novgorod_Oblast-left: 40px;
+      
+      --Sverdlovsk_Oblast-top: 0px;
+      --Sverdlovsk_Oblast-left: 0px;
    }
    
    .project__map_holder .map {
@@ -744,6 +759,9 @@ header.project__header_container:before {
       
       --Nizhny_Novgorod_Oblast-top: 117px;
       --Nizhny_Novgorod_Oblast-left: 53px;
+      
+      --Sverdlovsk_Oblast-top: 40px;
+      --Sverdlovsk_Oblast-left: 30px;
    }
    
    .project__map_holder .map {
@@ -790,6 +808,9 @@ header.project__header_container:before {
    
    .icon-task-4 {
       height: 70px;
+      width: 130px;
+      min-width: 130px;
+      background-position: left;
    }
    .project__calendar_container {
       padding-top: 200px;
@@ -863,6 +884,9 @@ header.project__header_container:before {
       
       --Nizhny_Novgorod_Oblast-top: 183px;
       --Nizhny_Novgorod_Oblast-left: 87px;
+      
+      --Sverdlovsk_Oblast-top: 125px;
+      --Sverdlovsk_Oblast-left: 90px;
    }
    .project__info_container:before {
       bottom: 45%;
@@ -938,6 +962,9 @@ header.project__header_container:before {
       
       --Nizhny_Novgorod_Oblast-top: 216px;
       --Nizhny_Novgorod_Oblast-left: 103px;
+      
+      --Sverdlovsk_Oblast-top: 170px;
+      --Sverdlovsk_Oblast-left: 120px;
    }
    
    
@@ -1042,6 +1069,9 @@ header.project__header_container:before {
       
       --Nizhny_Novgorod_Oblast-top: 256px;
       --Nizhny_Novgorod_Oblast-left: 118px;
+
+      --Sverdlovsk_Oblast-top: 210px;
+      --Sverdlovsk_Oblast-left: 150px;
    }
    
    .project__calendar_container {
@@ -1182,6 +1212,9 @@ header.project__header_container:before {
       
       --Nizhny_Novgorod_Oblast-top: 269px;
       --Nizhny_Novgorod_Oblast-left: 121px;
+      
+      --Sverdlovsk_Oblast-top: 220px;
+      --Sverdlovsk_Oblast-left: 160px;
    }
    .project__info_container {
       margin-top: 20vw;
@@ -1313,6 +1346,10 @@ header.project__header_container:before {
    
    .icon-task-2 {
       height: 60px;
+   }
+   .icon-task-4 {
+      min-width: 150px;
+      margin-top: 1rem;
    }
 }
 
