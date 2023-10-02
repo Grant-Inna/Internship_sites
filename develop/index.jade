@@ -61,7 +61,7 @@ html( lang='ru' )
                h2.project-detailed__title__text.project-detailed__title__text-is.mb-3 Календарь мероприятий
                .relation
                .project__calendar_holder
-                  iframe(src="https://calendar.yandex.ru/embed/month?&layer_ids=23034565, 23977584, 23210247, 23210257, 23210859, 23210760, 23210790, 23210727, 23210690, 23210563, 23210797, 23210881, 23210719, 23210613, 23210773, 23210765, 23210671, 23210769, 23210833,  23210704, 23210516, 24633691, 23210748&tz… мероприятий" width='100%' height='100%' frameborder='0' style='border: 1px solid #eee')
+                  iframe(src="https://calendar.yandex.ru/embed/month?&layer_ids=23034565, 23977584, 23210247, 23210257, 23210859, 23210760, 23210790, 23210727, 23210690, 23210563, 23210797, 23210881, 23210719, 23210613, 23210773, 23210765, 23210671, 23210769, 23210833,  23210704, 23210516, 24633691, 25534503, 23210748&tz… мероприятий" width='100%' height='100%' frameborder='0' style='border: 1px solid #eee')
 
             .project__map_container
                h2.project-detailed__title__text.project-detailed__title__text-is.mb-4 Интерактивная карта стажировочных площадок
@@ -90,6 +90,7 @@ html( lang='ru' )
                      #Nizhny_Novgorod_Oblast.region 52
                      #Sverdlovsk_Oblast.region 66
                      #LNR.region 81
+                     #Yaroslavl_Oblast.region 76
 
                   #card_big-Irkutsk_Oblast.project__region_holder.card_Irkutsk_Oblast
                      h3 Иркутская область
@@ -383,6 +384,23 @@ html( lang='ru' )
                            i.icon-calendar
                            | Мероприятия 2023 года
 
+                  #card_big-Yaroslavl_Oblast.project__region_holder.card_Yaroslavl_Oblast
+                     h3 Ярославская область
+                     .project__region_info
+                        .region__info-name ГАУ ДПО Ярославской области &laquo;Институт развития образования&raquo;
+                        a( href="tel:+74852230274" ).region__info
+                           i.icon-phone
+                           | 8&nbsp;(4852)&nbsp;23-02-74
+                        a( href="mailto:serafimovich@iro.yar.ru").region__info
+                           i.icon-mail
+                           | serafimovich@iro.yar.ru
+                        a( href="mailto:yar.iro@yarregion.ru").region__info
+                           i.icon-mail
+                           | yar.iro@yarregion.ru
+                        a( href="https://calendar.yandex.ru/embed/month?&layer_ids=25534503&tz_id=Europe/Moscow&layer_names=Ярославская область" target='_blank').region__info.mt-2
+                           i.icon-calendar
+                           | Мероприятия 2023 года
+
                .project__region_names
                   div( data-region='Irkutsk_Oblast')
                      .project__region_number 38
@@ -450,6 +468,9 @@ html( lang='ru' )
                   div( data-region='LNR')
                      .project__region_number 81
                      | Луганская Народная Республика
+                  div( data-region='Yaroslavl_Oblast')
+                     .project__region_number 76
+                     | Ярославская область
 
       script( src='./assets/js/jquery.js' )
       script( src='./assets/js/work.js' )

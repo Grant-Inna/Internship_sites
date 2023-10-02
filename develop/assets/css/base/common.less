@@ -276,6 +276,7 @@ header.project__header_container:before {
 .Nizhny_Novgorod_Oblast { .Nizhny_Novgorod_Oblast(); }
 .Sverdlovsk_Oblast { .Sverdlovsk_Oblast(); }
 .LNR { .LNR(); }
+.Yaroslavl_Oblast { .Yaroslavl_Oblast(); }
 
 :root {
    --Irkutsk_Oblast-top: 0px;
@@ -344,6 +345,8 @@ header.project__header_container:before {
    --LNR-top: 0px;
    --LNR-left: 0px;
    
+   --Yaroslavl_Oblast-top: 0px;
+   --Yaroslavl_Oblast-left: 0px;
    
 }
 
@@ -434,6 +437,10 @@ header.project__header_container:before {
 #LNR {
     top: calc(485px - var(--LNR-top));
     left: calc(90px - var(--LNR-left));
+}
+#Yaroslavl_Oblast {
+    top: calc(375px - var(--Yaroslavl_Oblast-top));
+    left: calc(190px - var(--Yaroslavl_Oblast-left));
 }
 
 .project__region_holder h3 {
@@ -589,6 +596,10 @@ header.project__header_container:before {
     top: calc(350px - var(--LNR-top) - 10vw);
     left: calc(200px - var(--LNR-left));
 }
+.project__region_holder.card_Yaroslavl_Oblast {
+    top: calc(320px - var(--Yaroslavl_Oblast-top) - 10vw);
+    left: calc(350px - var(--Yaroslavl_Oblast-left));
+}
 
 
 .project__region_names {
@@ -634,7 +645,7 @@ header.project__header_container:before {
    margin-left: 2px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1350px) {
    :root {
       --Irkutsk_Oblast-top: 100px;
       --Irkutsk_Oblast-left: 130px;
@@ -701,6 +712,9 @@ header.project__header_container:before {
       
       --LNR-top: 90px;
       --LNR-left: 20px;
+      
+      --Yaroslavl_Oblast-top: 75px;
+      --Yaroslavl_Oblast-left: 35px;
    }
    
    .project__map_holder .map {
@@ -713,7 +727,7 @@ header.project__header_container:before {
    }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
    :root {
       --Irkutsk_Oblast-top: 130px;
       --Irkutsk_Oblast-left: 190px;
@@ -780,6 +794,9 @@ header.project__header_container:before {
       
       --LNR-top: 130px;
       --LNR-left: 30px;
+      
+      --Yaroslavl_Oblast-top: 107px;
+      --Yaroslavl_Oblast-left: 48px;
    }
    
    .project__map_holder .map {
@@ -841,7 +858,7 @@ header.project__header_container:before {
    }
 }
 
-@media (max-width: 950px) {
+@media screen and (max-width: 1050px) {
    :root {
       --Irkutsk_Oblast-top: 230px;
       --Irkutsk_Oblast-left: 310px;
@@ -908,6 +925,9 @@ header.project__header_container:before {
       
       --LNR-top: 213px;
       --LNR-left: 50px;
+      
+      --Yaroslavl_Oblast-top: 175px;
+      --Yaroslavl_Oblast-left: 91px;
    }
    .project__info_container:before {
       bottom: 45%;
@@ -922,7 +942,7 @@ header.project__header_container:before {
    }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 868px) {
    :root {
       --Irkutsk_Oblast-top: 270px;
       --Irkutsk_Oblast-left: 370px;
@@ -933,7 +953,7 @@ header.project__header_container:before {
       --St-Petersburg_City-top: 160px;
       --St-Petersburg_City-left: 90px;
       
-      --Leningradskaya_Oblast-top: 160px;
+      --Leningradskaya_Oblast-top: 167px;
       --Leningradskaya_Oblast-left: 90px;
       
       --Bashkortostan_Republic-top: 267px;
@@ -989,6 +1009,9 @@ header.project__header_container:before {
       
       --LNR-top: 255px;
       --LNR-left: 50px;
+      
+      --Yaroslavl_Oblast-top: 203px;
+      --Yaroslavl_Oblast-left: 91px;
    }
    
    
@@ -1032,7 +1055,7 @@ header.project__header_container:before {
    }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 750px) {
    :root {
       --Irkutsk_Oblast-top: 320px;
       --Irkutsk_Oblast-left: 430px;
@@ -1099,8 +1122,15 @@ header.project__header_container:before {
       
       --LNR-top: 300px;
       --LNR-left: 60px;
+      
+      --Yaroslavl_Oblast-top: 243px;
+      --Yaroslavl_Oblast-left: 106px;
    }
-   
+   .region {
+      width: 20px;
+      height: 20px;
+      font-size: 13px;
+   }
    .project__calendar_container {
       padding-top: 160px;
    }
@@ -1178,7 +1208,7 @@ header.project__header_container:before {
    }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 650px) {
    :root {
       --Irkutsk_Oblast-top: 340px;
       --Irkutsk_Oblast-left: 455px;
@@ -1245,6 +1275,9 @@ header.project__header_container:before {
       
       --LNR-top: 310px;
       --LNR-left: 70px;
+      
+      --Yaroslavl_Oblast-top: 250px;
+      --Yaroslavl_Oblast-left: 106px;
    }
    .project__info_container {
       margin-top: 20vw;
@@ -1281,7 +1314,7 @@ header.project__header_container:before {
    }
 }
 
-@media (max-width: 490px) {
+@media screen and (max-width: 590px) {
    :root {
       --Irkutsk_Oblast-top: 338px;
       --Irkutsk_Oblast-left: 455px;
@@ -1300,7 +1333,7 @@ header.project__header_container:before {
    }
 }
 
-@media (max-width: 460px) {
+@media screen and (max-width: 560px) {
    .project__map_img {
       transition: none;
    }
@@ -1383,7 +1416,7 @@ header.project__header_container:before {
    }
 }
 
-@media (max-width: 360px) {
+@media screen and (max-width: 460px) {
    .project__link_container {
       width: 90%;
       right: 50px;
