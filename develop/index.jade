@@ -61,7 +61,7 @@ html( lang='ru' )
                h2.project-detailed__title__text.project-detailed__title__text-is.mb-3 Календарь мероприятий
                .relation
                .project__calendar_holder
-                  iframe(src="https://calendar.yandex.ru/embed/month?&layer_ids=23034565, 23977584, 23210247, 23210257, 23210859, 23210760, 23210790, 23210727, 23210690, 23210563, 23210797, 23210881, 23210719, 23210613, 23210773, 23210765, 23210671, 23210769, 23210833,  23210704, 23210516, 24633691, 25534503, 23210748&tz… мероприятий" width='100%' height='100%' frameborder='0' style='border: 1px solid #eee')
+                  iframe(src="https://calendar.yandex.ru/embed/month?&layer_ids=23034565, 23977584, 23210247, 23210257, 23210859, 23210760, 23210790, 23210727, 23210690, 23210563, 23210797, 23210881, 23210719, 23210613, 23210773, 23210765, 23210671, 23210769, 23210833,  23210704, 23210516, 24633691, 26174121, 25534503, 23210748&tz… мероприятий" width='100%' height='100%' frameborder='0' style='border: 1px solid #eee')
 
             .project__map_container
                h2.project-detailed__title__text.project-detailed__title__text-is.mb-4 Интерактивная карта стажировочных площадок
@@ -91,6 +91,7 @@ html( lang='ru' )
                      #Sverdlovsk_Oblast.region 66
                      #LNR.region 81
                      #Yaroslavl_Oblast.region 76
+                     #Novgorod_Oblast.region 53
 
                   #card_big-Irkutsk_Oblast.project__region_holder.card_Irkutsk_Oblast
                      h3 Иркутская область
@@ -401,6 +402,20 @@ html( lang='ru' )
                            i.icon-calendar
                            | Мероприятия 2023 года
 
+                  #card_big-Novgorod_Oblast.project__region_holder.card_Novgorod_Oblast
+                     h3 Новгородская область
+                     .project__region_info
+                        .region__info-name Министерство образования Новгородской области
+                        a( href="tel:+78162501061" ).region__info
+                           i.icon-phone
+                           | 8&nbsp;(8162)&nbsp;50-10-61
+                        a( href="mailto:e.garkavenko@edu53.ru").region__info
+                           i.icon-mail
+                           | e.garkavenko@edu53.ru
+                        a( href="https://calendar.yandex.ru/embed/month?&layer_ids=26174121&tz_id=Europe/Moscow&layer_names=Новгородская область" target='_blank').region__info.mt-2
+                           i.icon-calendar
+                           | Мероприятия 2023 года
+
                .project__region_names
                   div( data-region='Irkutsk_Oblast')
                      .project__region_number 38
@@ -471,6 +486,9 @@ html( lang='ru' )
                   div( data-region='Yaroslavl_Oblast')
                      .project__region_number 76
                      | Ярославская область
+                  div( data-region='Novgorod_Oblast')
+                     .project__region_number 53
+                     | Новгородская область
 
       script( src='./assets/js/jquery.js' )
       script( src='./assets/js/work.js' )

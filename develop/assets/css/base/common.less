@@ -1,3 +1,7 @@
+.fullscreen-menu_inactive {
+   z-index: 250;
+}
+
 .content {
    padding-bottom: 0;
 }
@@ -277,6 +281,7 @@ header.project__header_container:before {
 .Sverdlovsk_Oblast { .Sverdlovsk_Oblast(); }
 .LNR { .LNR(); }
 .Yaroslavl_Oblast { .Yaroslavl_Oblast(); }
+.Novgorod_Oblast { .Novgorod_Oblast(); }
 
 :root {
    --Irkutsk_Oblast-top: 0px;
@@ -347,6 +352,9 @@ header.project__header_container:before {
    
    --Yaroslavl_Oblast-top: 0px;
    --Yaroslavl_Oblast-left: 0px;
+   
+   --Novgorod_Oblast-top: 0px;
+   --Novgorod_Oblast-left: 0px;
    
 }
 
@@ -441,6 +449,10 @@ header.project__header_container:before {
 #Yaroslavl_Oblast {
     top: calc(375px - var(--Yaroslavl_Oblast-top));
     left: calc(190px - var(--Yaroslavl_Oblast-left));
+}
+#Novgorod_Oblast {
+    top: calc(330px - var(--Novgorod_Oblast-top));
+    left: calc(150px - var(--Novgorod_Oblast-left));
 }
 
 .project__region_holder h3 {
@@ -600,6 +612,10 @@ header.project__header_container:before {
     top: calc(320px - var(--Yaroslavl_Oblast-top) - 10vw);
     left: calc(350px - var(--Yaroslavl_Oblast-left));
 }
+.project__region_holder.card_Novgorod_Oblast {
+    top: calc(340px - var(--Novgorod_Oblast-top) - 10vw);
+    left: calc(240px - var(--Novgorod_Oblast-left));
+}
 
 
 .project__region_names {
@@ -715,6 +731,10 @@ header.project__header_container:before {
       
       --Yaroslavl_Oblast-top: 75px;
       --Yaroslavl_Oblast-left: 35px;
+      
+      --Novgorod_Oblast-top: 65px;
+      --Novgorod_Oblast-left: 30px;
+   
    }
    
    .project__map_holder .map {
@@ -724,6 +744,10 @@ header.project__header_container:before {
    
    .project__info_container:before {
       bottom: -10%
+   }
+   
+   .project__region_holder.card_Novgorod_Oblast {
+       left: calc(310px - var(--Novgorod_Oblast-left));
    }
 }
 
@@ -797,6 +821,10 @@ header.project__header_container:before {
       
       --Yaroslavl_Oblast-top: 107px;
       --Yaroslavl_Oblast-left: 48px;
+      
+      --Novgorod_Oblast-top: 90px;
+      --Novgorod_Oblast-left: 40px;
+   
    }
    
    .project__map_holder .map {
@@ -928,6 +956,10 @@ header.project__header_container:before {
       
       --Yaroslavl_Oblast-top: 175px;
       --Yaroslavl_Oblast-left: 91px;
+      
+      --Novgorod_Oblast-top: 145px;
+      --Novgorod_Oblast-left: 70px;
+   
    }
    .project__info_container:before {
       bottom: 45%;
@@ -1012,6 +1044,10 @@ header.project__header_container:before {
       
       --Yaroslavl_Oblast-top: 203px;
       --Yaroslavl_Oblast-left: 91px;
+      
+      --Novgorod_Oblast-top: 170px;
+      --Novgorod_Oblast-left: 85px;
+   
    }
    
    
@@ -1125,6 +1161,10 @@ header.project__header_container:before {
       
       --Yaroslavl_Oblast-top: 243px;
       --Yaroslavl_Oblast-left: 106px;
+      
+      --Novgorod_Oblast-top: 215px;
+      --Novgorod_Oblast-left: 105px;
+   
    }
    .region {
       width: 20px;
@@ -1342,6 +1382,7 @@ header.project__header_container:before {
    }
    
    .project__map_holder {
+      margin-top: 60px;
       .column-center()
    }
    .project__region_names {
