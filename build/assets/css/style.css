@@ -1465,8 +1465,8 @@ header.project__header_container:before {
       --LNR-left: 60px;
       --Yaroslavl_Oblast-top: 243px;
       --Yaroslavl_Oblast-left: 106px;
-      --Novgorod_Oblast-top: 215px;
-      --Novgorod_Oblast-left: 105px
+      --Novgorod_Oblast-top: 199px;
+      --Novgorod_Oblast-left: 90px
    }
    
    .region {
@@ -1593,7 +1593,9 @@ header.project__header_container:before {
       --LNR-top: 310px;
       --LNR-left: 70px;
       --Yaroslavl_Oblast-top: 250px;
-      --Yaroslavl_Oblast-left: 106px
+      --Yaroslavl_Oblast-left: 106px;
+      --Novgorod_Oblast-top: 215px;
+      --Novgorod_Oblast-left: 105px
    }
    
    .project__info_container {
