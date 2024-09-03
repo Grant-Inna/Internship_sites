@@ -283,6 +283,8 @@ header.project__header_container:before {
 .Yaroslavl_Oblast { .Yaroslavl_Oblast(); }
 .Novgorod_Oblast { .Novgorod_Oblast(); }
 .Yakutia { .Yakutia(); }
+.Astrakhan_Oblast { .Astrakhan_Oblast(); }
+.Chelyabinsk_Region { .Chelyabinsk_Region(); }
 
 :root {
    --Irkutsk_Oblast-top: 0px;
@@ -359,6 +361,12 @@ header.project__header_container:before {
    
    --Yakutia-top: 0px;
    --Yakutia-left: 0px;
+   
+   --Astrakhan_Oblast-top: 0px;
+   --Astrakhan_Oblast-left: 0px;
+   
+   --Chelyabinsk_Region-top: 0px;
+   --Chelyabinsk_Region-left: 0px;
    
 }
 
@@ -461,6 +469,14 @@ header.project__header_container:before {
 #Yakutia {
     top: calc(300px - var(--Yakutia-top));
     left: calc(850px - var(--Yakutia-left));
+}
+#Astrakhan_Oblast {
+    top: calc(570px - var(--Astrakhan_Oblast-top));
+    left: calc(150px - var(--Astrakhan_Oblast-left));
+}
+#Chelyabinsk_Region {
+    top: calc(520px - var(--Chelyabinsk_Region-top));
+    left: calc(330px - var(--Chelyabinsk_Region-left));
 }
 
 .project__region_holder h3 {
@@ -628,8 +644,16 @@ header.project__header_container:before {
     top: calc(150px - var(--Yakutia-top));
     right: calc(200px + var(--Yakutia-left));
 }
+.project__region_holder.card_Astrakhan_Oblast {
+    top: calc(250px - var(--Astrakhan_Oblast-top));
+    right: calc(350px + var(--Astrakhan_Oblast-left));
+}
+.project__region_holder.card_Chelyabinsk_Region {
+     top: calc(340px - var(--Chelyabinsk_Region-top));
+    left: calc(410px - var(--Chelyabinsk_Region-left));
+}
 
-
+   
 .project__region_names {
    width: 100%;
    padding-left: 20px;
@@ -749,6 +773,12 @@ header.project__header_container:before {
       
       --Yakutia-top: 30px;
       --Yakutia-left: 150px;
+   
+      --Astrakhan_Oblast-top: 105px;
+      --Astrakhan_Oblast-left: 30px;
+      
+      --Chelyabinsk_Region-top: 88px;
+      --Chelyabinsk_Region-left: 60px;
 
    }
    
@@ -842,7 +872,12 @@ header.project__header_container:before {
       
       --Yakutia-top: 45px;
       --Yakutia-left: 220px;
-
+   
+      --Astrakhan_Oblast-top: 150px;
+      --Astrakhan_Oblast-left: 40px;
+      
+      --Chelyabinsk_Region-top: 136px;
+      --Chelyabinsk_Region-left: 80px;
    
    }
    
@@ -981,8 +1016,13 @@ header.project__header_container:before {
       
       --Yakutia-top: 110px;
       --Yakutia-left: 365px;
-
    
+      --Astrakhan_Oblast-top: 247px;
+      --Astrakhan_Oblast-left: 60px;
+      
+      --Chelyabinsk_Region-top: 222px;
+      --Chelyabinsk_Region-left: 135px;
+
    }
    .project__info_container:before {
       bottom: 45%;
@@ -1074,8 +1114,18 @@ header.project__header_container:before {
       --Yakutia-top: 140px;
       --Yakutia-left: 440px;
       
+      --Astrakhan_Oblast-top: 287px;
+      --Astrakhan_Oblast-left: 72px;
+      
+      --Chelyabinsk_Region-top: 260px;
+      --Chelyabinsk_Region-left: 165px;
+
+      
    }
    
+   .project__region_holder.card_Yakutia {
+      right: calc(0 + var(--Yakutia-left));
+   }
    
    .project__region_holder[ id^="card_big-"] {
       top: 40%;
@@ -1193,8 +1243,13 @@ header.project__header_container:before {
       
       --Yakutia-top: 170px;
       --Yakutia-left: 510px;
+      
+      --Astrakhan_Oblast-top: 337px;
+      --Astrakhan_Oblast-left: 85px;
+      
+      --Chelyabinsk_Region-top: 300px;
+      --Chelyabinsk_Region-left: 190px;
 
-   
    }
    .region {
       width: 20px;
@@ -1354,7 +1409,13 @@ header.project__header_container:before {
       
       --Yakutia-top: 180px;
       --Yakutia-left: 540px;
-   
+      
+      --Astrakhan_Oblast-top: 357px;
+      --Astrakhan_Oblast-left: 89px;
+      
+      --Chelyabinsk_Region-top: 320px;
+      --Chelyabinsk_Region-left: 200px;
+
    }
    .project__info_container {
       margin-top: 20vw;
@@ -1364,8 +1425,9 @@ header.project__header_container:before {
       height: 310px;
    }
    .region {
-      width: 22px;
-      height: 22px;
+      width: 21px;
+      height: 21px;
+      font-size: 11px;
    }
    
    .project__link_container {
@@ -1407,6 +1469,10 @@ header.project__header_container:before {
       
       --Buryatiya_Republic-top: 353px;
       --Buryatiya_Republic-left: 508px;
+      
+      --Chelyabinsk_Region-top: 325px;
+      --Chelyabinsk_Region-left: 205px;
+
    }
 }
 
