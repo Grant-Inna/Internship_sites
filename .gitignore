@@ -1,3 +1,5 @@
 /.idea
 /node_modules/
 /файлы/
+/package-lock.json
+/тестовый сайт.txt
