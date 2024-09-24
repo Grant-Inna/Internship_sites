@@ -61,7 +61,7 @@ html( lang='ru' )
                h2.project-detailed__title__text.project-detailed__title__text-is.mb-3 Календарь мероприятий
                .relation
                .project__calendar_holder
-                  iframe(src="https://calendar.yandex.ru/embed/month?&layer_ids=23034565, 23977584, 23210247, 23210257, 23210859, 23210760, 23210790, 23210727, 23210690, 23210563, 23210797, 23210881, 23210719, 23210613, 23210773, 23210765, 23210671, 23210769, 23210833,  23210704, 23210516, 24633691, 26174121, 25534503, 26818697, 253420509, 23210748&tz… мероприятий" width='100%' height='100%' frameborder='0' style='border: 1px solid #eee')
+                  iframe(src="https://calendar.yandex.ru/embed/month?&layer_ids=23034565, 23977584, 23210247, 23210257, 23210859, 23210760, 23210790, 23210727, 23210690, 23210563, 23210797, 23210881, 23210719, 23210613, 23210773, 23210765, 23210671, 23210769, 23210833,  23210704, 23210516, 24633691, 26174121, 25534503, 26818697, 253420509, 29464764, 2950029, 23210748&tz… мероприятий" width='100%' height='100%' frameborder='0' style='border: 1px solid #eee')
 
             .project__map_container
                h2.project-detailed__title__text.project-detailed__title__text-is.mb-4 Интерактивная карта стажировочных площадок
@@ -95,6 +95,8 @@ html( lang='ru' )
                      #Yakutia.region 14
                      #Astrakhan_Oblast.region 30
                      #Chelyabinsk_Region.region 74
+                     #DNR.region 80
+                     #Saratov_Oblast.region 64
 
                   #card_big-Irkutsk_Oblast.project__region_holder.card_Irkutsk_Oblast
                      h3 Иркутская область
@@ -143,7 +145,7 @@ html( lang='ru' )
                         .region__info-name ЦНППМ ГАОУ ДПО &laquo;Ленинградский областной институт развития образования&raquo;
                         a( href="tel:+78123725039w304" ).region__info
                            i.icon-phone
-                           | 8&nbsp;(812)&nbsp;372-50-39 (доб.&nbsp;304)
+                           | 8&nbsp;(812)&nbsp;372-50-39, (доб.&nbsp;304)
                         a( href="mailto:firsova@loiro.ru").region__info
                            i.icon-mail
                            | firsova@loiro.ru
@@ -450,11 +452,37 @@ html( lang='ru' )
                         .region__info-name ГБУ&nbsp;ДПО &laquo;Челябинский институт развития образования&raquo;
                         a( href="tel:+73512173089" ).region__info
                            i.icon-phone
-                           | 8&nbsp;(351)&nbsp;217-30-89 (доб.&nbsp;13031)
+                           | 8&nbsp;(351)&nbsp;217-30-89, (доб.&nbsp;13031)
                         a( href="mailto:yulia.baranova@chiro74.ru").region__info
                            i.icon-mail
                            | yulia.baranova@chiro74.ru
                         a( href="https://calendar.yandex.ru/embed/week?&layer_ids=30536159&tz_id=Europe/Moscow&layer_names=Челябинская область" target='_blank').region__info.mt-2
+                           i.icon-calendar
+                           | Мероприятия 2024 года
+                  #card_big-Saratov_Oblast.project__region_holder.card_Saratov_Oblast
+                     h3 Cаратовская область
+                     .project__region_info
+                        .region__info-name ГБУ&nbsp;ДПО &laquo;Саратовский областной институт развития образованием&raquo;
+                        a( href="tel:+78452282523" ).region__info
+                           i.icon-phone
+                           | 8&nbsp;(8452)&nbsp;28-25-23, (доб.&nbsp;139)
+                        a( href="mailto:crmso@soiro.ru").region__info
+                           i.icon-mail
+                           | crmso@soiro.ru
+                        a( href="https://calendar.yandex.ru/embed/week?&layer_ids=29464764&tz_id=Europe/Moscow&layer_names=Саратовская область" target='_blank').region__info.mt-2
+                           i.icon-calendar
+                           | Мероприятия 2024 года
+                  #card_big-DNR.project__region_holder.card_DNR
+                     h3 Донецкая Народная Республика
+                     .project__region_info
+                        .region__info-name ГБУ&nbsp;ДПО &laquo;Донецкий Республиканский институт развития образования&raquo;
+                        a( href="tel:+79493622917" ).region__info
+                           i.icon-phone
+                           | 8&nbsp;(949)&nbsp;362-29-17
+                        a( href="mailto:jane_dor@mail.ru").region__info
+                           i.icon-mail
+                           | jane_dor@mail.ru
+                        a( href="https://calendar.yandex.ru/embed/week?&layer_ids=29500298&tz_id=Europe/Moscow&layer_names=Донецкая Народная Республика" target='_blank').region__info.mt-2
                            i.icon-calendar
                            | Мероприятия 2024 года
 
@@ -540,6 +568,12 @@ html( lang='ru' )
                   div( data-region='Chelyabinsk_Region')
                      .project__region_number 74
                      | Челябинская область
+                  div( data-region='Chelyabinsk_Region')
+                     .project__region_number 64
+                     | Cаратовская область
+                  div( data-region='Chelyabinsk_Region')
+                     .project__region_number 80
+                     | Донецкая Народная Республика
 
       script( src='./assets/js/jquery.js' )
       script( src='./assets/js/work.js' )

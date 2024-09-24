@@ -223,6 +223,7 @@ header.project__header_container:before {
    z-index: 300;
    width: 24px;
    height: 24px;
+   line-height: 100%;
    
    background-color: #4d2aab;
    //border: 1px solid #897dd9;
@@ -285,6 +286,8 @@ header.project__header_container:before {
 .Yakutia { .Yakutia(); }
 .Astrakhan_Oblast { .Astrakhan_Oblast(); }
 .Chelyabinsk_Region { .Chelyabinsk_Region(); }
+.Saratov_Oblast { .Saratov_Oblast(); }
+.DNR { .DNR(); }
 
 :root {
    --Irkutsk_Oblast-top: 0px;
@@ -367,6 +370,12 @@ header.project__header_container:before {
    
    --Chelyabinsk_Region-top: 0px;
    --Chelyabinsk_Region-left: 0px;
+   
+   --Saratov_Oblast-top: 0px;
+   --Saratov_Oblast-left: 0px;
+   
+   --DNR-top: 0px;
+   --DNR-left: 0px;
    
 }
 
@@ -477,6 +486,14 @@ header.project__header_container:before {
 #Chelyabinsk_Region {
     top: calc(520px - var(--Chelyabinsk_Region-top));
     left: calc(330px - var(--Chelyabinsk_Region-left));
+}
+#Saratov_Oblast {
+    top: calc(500px - var(--Saratov_Oblast-top));
+    left: calc(185px - var(--Saratov_Oblast-left));
+}
+#DNR {
+    top: calc(485px - var(--DNR-top));
+    left: calc(60px - var(--DNR-left));
 }
 
 .project__region_holder h3 {
@@ -649,8 +666,16 @@ header.project__header_container:before {
     right: calc(350px + var(--Astrakhan_Oblast-left));
 }
 .project__region_holder.card_Chelyabinsk_Region {
-     top: calc(340px - var(--Chelyabinsk_Region-top));
+    top: calc(340px - var(--Chelyabinsk_Region-top));
     left: calc(410px - var(--Chelyabinsk_Region-left));
+}
+.project__region_holder.card_Saratov_Oblast {
+    top: calc(230px - var(--Saratov_Oblast-top));
+    left: calc(350px - var(--Saratov_Oblast-left));
+}
+.project__region_holder.card_DNR {
+   top: calc(220px - var(--DNR-top));
+   left: calc(310px - var(--DNR-left));
 }
 
    
@@ -779,7 +804,12 @@ header.project__header_container:before {
       
       --Chelyabinsk_Region-top: 88px;
       --Chelyabinsk_Region-left: 60px;
-
+      
+      --Saratov_Oblast-top: 94px;
+      --Saratov_Oblast-left: 33px;
+      
+      --DNR-top: 90px;
+      --DNR-left: 20px;
    }
    
    .project__map_holder .map {
@@ -878,6 +908,12 @@ header.project__header_container:before {
       
       --Chelyabinsk_Region-top: 136px;
       --Chelyabinsk_Region-left: 80px;
+      
+      --Saratov_Oblast-top: 134px;
+      --Saratov_Oblast-left: 44px;
+      
+      --DNR-top: 130px;
+      --DNR-left: 26px;
    
    }
    
@@ -1022,6 +1058,12 @@ header.project__header_container:before {
       
       --Chelyabinsk_Region-top: 222px;
       --Chelyabinsk_Region-left: 135px;
+      
+      --Saratov_Oblast-top: 218px;
+      --Saratov_Oblast-left: 77px;
+      
+      --DNR-top: 214px;
+      --DNR-left: 34px;
 
    }
    .project__info_container:before {
@@ -1119,7 +1161,12 @@ header.project__header_container:before {
       
       --Chelyabinsk_Region-top: 260px;
       --Chelyabinsk_Region-left: 165px;
-
+      
+      --Saratov_Oblast-top: 255px;
+      --Saratov_Oblast-left: 86px;
+      
+      --DNR-top: 254px;
+      --DNR-left: 42px;
       
    }
    
@@ -1249,12 +1296,18 @@ header.project__header_container:before {
       
       --Chelyabinsk_Region-top: 300px;
       --Chelyabinsk_Region-left: 190px;
+      
+      --Saratov_Oblast-top: 300px;
+      --Saratov_Oblast-left: 110px;
+      
+      --DNR-top: 290px;
+      --DNR-left: 46px;
 
    }
    .region {
-      width: 20px;
-      height: 20px;
-      font-size: 13px;
+      width: 18px;
+      height: 18px;
+      font-size: 11px;
    }
    .project__calendar_container {
       padding-top: 160px;
@@ -1415,7 +1468,18 @@ header.project__header_container:before {
       
       --Chelyabinsk_Region-top: 320px;
       --Chelyabinsk_Region-left: 200px;
+      
+      --Saratov_Oblast-top: 315px;
+      --Saratov_Oblast-left: 113px;
+      
+      --DNR-top: 310px;
+      --DNR-left: 55px;
 
+   }
+   .region {
+      width: 17px;
+      height: 17px;
+      font-size: 8px;
    }
    .project__info_container {
       margin-top: 20vw;
@@ -1423,11 +1487,6 @@ header.project__header_container:before {
    .project__map_holder .map {
       width: 460px;
       height: 310px;
-   }
-   .region {
-      width: 21px;
-      height: 21px;
-      font-size: 11px;
    }
    
    .project__link_container {
