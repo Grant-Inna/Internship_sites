@@ -70,7 +70,7 @@ header.project__header_container {
 header.project__header_container:before {
    content: '';
    position: absolute;
-   z-index: 400;
+   z-index: 200;
    display: block;
    bottom: -60px;
    right: -6px;
@@ -288,6 +288,7 @@ header.project__header_container:before {
 .Chelyabinsk_Region { .Chelyabinsk_Region(); }
 .Saratov_Oblast { .Saratov_Oblast(); }
 .DNR { .DNR(); }
+.Krasnoyarskiy_kray { .Krasnoyarskiy_kray(); }
 
 :root {
    --Irkutsk_Oblast-top: 0px;
@@ -376,6 +377,9 @@ header.project__header_container:before {
    
    --DNR-top: 0px;
    --DNR-left: 0px;
+   
+   --Krasnoyarskiy_kray-top: 0px;
+   --Krasnoyarskiy_kray-left: 0px;
    
 }
 
@@ -494,6 +498,10 @@ header.project__header_container:before {
 #DNR {
     top: calc(485px - var(--DNR-top));
     left: calc(60px - var(--DNR-left));
+}
+#Krasnoyarskiy_kray {
+    top: calc(405px - var(--Krasnoyarskiy_kray-top));
+    left: calc(630px - var(--Krasnoyarskiy_kray-left));
 }
 
 .project__region_holder h3 {
@@ -677,6 +685,10 @@ header.project__header_container:before {
    top: calc(220px - var(--DNR-top));
    left: calc(310px - var(--DNR-left));
 }
+.project__region_holder.card_Krasnoyarskiy_kray {
+    top: calc(200px - var(--Krasnoyarskiy_kray-top));
+    left: calc(630px - var(--Krasnoyarskiy_kray-left));
+}
 
    
 .project__region_names {
@@ -810,6 +822,10 @@ header.project__header_container:before {
       
       --DNR-top: 90px;
       --DNR-left: 20px;
+      
+      --Krasnoyarskiy_kray-top: 90px;
+      --Krasnoyarskiy_kray-left: 110px;
+   
    }
    
    .project__map_holder .map {
@@ -914,6 +930,10 @@ header.project__header_container:before {
       
       --DNR-top: 130px;
       --DNR-left: 26px;
+      
+      --Krasnoyarskiy_kray-top: 120px;
+      --Krasnoyarskiy_kray-left: 160px;
+   
    
    }
    
@@ -1064,6 +1084,10 @@ header.project__header_container:before {
       
       --DNR-top: 214px;
       --DNR-left: 34px;
+      
+      --Krasnoyarskiy_kray-top: 180px;
+      --Krasnoyarskiy_kray-left: 270px;
+   
 
    }
    .project__info_container:before {
@@ -1167,6 +1191,10 @@ header.project__header_container:before {
       
       --DNR-top: 254px;
       --DNR-left: 42px;
+      
+      --Krasnoyarskiy_kray-top: 200px;
+      --Krasnoyarskiy_kray-left: 320px;
+   
       
    }
    
@@ -1302,6 +1330,10 @@ header.project__header_container:before {
       
       --DNR-top: 290px;
       --DNR-left: 46px;
+      
+      --Krasnoyarskiy_kray-top: 250px;
+      --Krasnoyarskiy_kray-left: 370px;
+   
 
    }
    .region {
@@ -1474,6 +1506,10 @@ header.project__header_container:before {
       
       --DNR-top: 310px;
       --DNR-left: 55px;
+      
+      --Krasnoyarskiy_kray-top: 260px;
+      --Krasnoyarskiy_kray-left: 393px;
+   
 
    }
    .region {
